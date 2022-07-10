@@ -1,0 +1,436 @@
+@media(min-width: 576px) and (max-width: 992px) {
+    /*index.html*/
+    .index{
+        background-color: $coloruno;
+        .main__index{
+            .portada{
+                width:100%;
+                min-height: 500px;
+                background-image: url(../img/img-index.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display:block;
+                div{
+                    width:100%;
+                    min-height: 500px;
+                    background:linear-gradient(90deg,blue,brown);
+                    opacity: 0.6;
+                    @include column-center;
+                    justify-content: space-between;
+                    h2{
+                        color:white;
+                        font-size: 5rem;
+                    }
+                    p{
+                            color:white;
+                        font-size: 3rem;
+                    }
+                }
+            }
+            .imagenes{
+                background-color: $colordos;
+                display:grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(3,1fr);
+                .card{
+                    width:80%;
+                    height:90%;
+                    .card-body{
+                        p{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*contactos.html*/
+    .contactos{
+        width:100%;
+        background-image: url(../img/papper.jpg);
+        .contactos__section{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width:100%;
+            .contacto__card{
+                width:80%;
+                .contacto__card-titulo{
+                    font-size: 2.5rem;
+                }
+                .contacto__card-info{
+                    width:100%;
+                    display:flex;
+                    .contact{
+                        width:50%;
+                        .contact-form{
+                            width:100%;
+                            p{
+                                width:100%;
+                                label,input{
+                                    font-size: 2rem;
+                                    width:90%;
+                                }
+                            }
+                        }
+                    }
+                    .info{
+                        display:flex;
+                        flex-direction: column;
+                        text-align: center;
+                        display:block;
+                        width:50%;
+                        h2{
+                            font-size: 3rem;
+                            color:$colordos;
+                        }
+                        .info__lista{
+                            margin:1rem;
+                            list-style: none;
+                            li{
+                                line-height: 3.5rem;
+                                color:$colordos;
+                                font-size: 1.5rem;
+                            }
+                        }
+                        p,h3{
+                            margin:1rem;
+                            color:$colordos;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* preguntasfrecuentes.html*/
+    .preguntas{
+        width:100%;
+        .preguntasfrecuentes{
+            background-color: $colordos;
+            display:flex;
+            width:100%;
+            .notebook{
+                display:none;
+            }
+            .signodeinterrogacion{
+                display:block;
+                width:40%;
+            }
+            .accordion{
+                h1{
+                    font-size: 3rem;
+                    color:black;
+                    text-align: center;
+                }
+                background-color: $colordos;
+                width:60%;
+                height:100%;
+            }
+        }
+    }
+    /*servicios.html*/
+    .servicios__body{
+        width:100%;
+        background-color: $colordos;
+        .servicio{
+            width:100%;
+            background-color: $colordos;
+            .servicios{
+                background-color: $colordos;
+                width:100%;
+                display:grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+                .card-mantenimiento,.card-hardware,.card-celulares,.card-redes{
+                    width:80%;
+                    max-width: 360px;
+                    display:flex;
+                    flex-direction: column;
+                    @include sombras;
+                    margin:5%5%;
+                    overflow: hidden;
+                    @include sombras;
+                    height:500px;
+                    border-radius: 2%;
+                    .card__top{
+                        height:50%;
+                        .card__img{
+                            width:100%;
+                            height:250px;
+                        }
+                    }
+                    .card__contenido{
+                        background-color: $coloruno;
+                        width:100%;
+                        height:50%;
+                        color:white;
+                        text-align: center;
+                        .card__h2{
+                            color:$colordos;
+                            font-size: 2rem;
+                        }
+                        .card__p{
+                            color:white;
+                            font-size: 2rem;
+                        }
+                    }
+                    &:hover{
+                    box-shadow: 5px 5px 20px rgba(0,0,0,0.9);
+                    }
+                }
+            }
+            .profesionales{
+                width:100%;
+                .cards{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    width:100%;
+                }
+            }
+        }
+    }
+}
+@media(min-width: 992px){
+    /*index.html*/
+    .index{
+        background-color: $coloruno;
+        header{
+            .navbar{
+                text-align: center;
+                .container-fluid{
+                    a{
+                        font-size: 3rem;
+                    }
+                    button{
+                        font-size: 3rem;
+                        span{
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+        .main__index{
+            .portada{
+                width:100%;
+                min-height: 600px;
+                background-image: url(../img/img-index.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display:block;
+                div{
+                    width:100%;
+                    min-height: 600px;
+                    background:linear-gradient(90deg,blue,brown);
+                    opacity: 0.6;
+                    @include column-center;
+                    justify-content: space-between;
+                    h2{
+                        color:white;
+                        font-size: 5rem;
+                    }
+                    p{
+                            color:white;
+                        font-size: 3rem;
+                    }
+                }
+            }
+            .imagenes{
+                background-color: $colordos;
+                display:grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(3,1fr);
+                .card{
+                    width:80%;
+                    height:90%;
+                    .card-body{
+                        p{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .imagenes__lista{
+                    text-align: center;
+                    margin:10%;
+                    display:block;
+                    width: 80%;
+                    height: 90%;
+                    box-shadow: 0px 1px 10 px rgba(0,0,0,0.9);
+                    ul{
+                        border:solid black;
+                        list-style: none;
+                        width:100%;
+                        height:100%;
+                        margin: 0;
+                        padding:0;
+                        color: white;
+                        .uno ,.tres,.cinco{
+                            font-size: 3rem;
+                            min-height: 90px;
+                            animation-name: li;
+                            animation-duration: 10s;
+                            animation-iteration-count: infinite;
+                        }
+                        .dos,.cuatro,.seis{
+                            font-size: 3rem;
+                            min-height:90px;
+                            animation-name: li-dos;
+                            animation-duration: 10s;
+                            animation-iteration-count: infinite;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* contactos.html*/
+    .contactos{
+        width:100%;
+        background-image: url(../img/papper.jpg);
+        .contactos__section{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width:100%;
+            .contacto__card{
+                width:70%;
+                .contacto__card-titulo{
+                    font-size: 2.5rem;
+                }
+                .contacto__card-info{
+                    width:100%;
+                    display:flex;
+                    .contact{
+                        width:50%;
+                        .contact-form{
+                            width:100%;
+                            p{
+                                width:100%;
+                                button,label,input,textarea{
+                                    font-size: 2rem;
+                                    width:80%;
+                                }
+                            }
+                        }
+                    }
+                    .info{
+                        display:flex;
+                        flex-direction: column;
+                        text-align: center;
+                        display:block;
+                        width:50%;
+                        line-height: 4.5rem;
+                        h2{
+                            font-size: 3rem;
+                            color:$colordos;
+                        }
+                        .info__lista{
+                            margin:1rem;
+                            list-style: none;
+                            li{
+                                line-height: 3.5rem;
+                                color:$colordos;
+                                font-size: 2rem;
+                            }
+                        }
+                        p,h3{
+                            margin:1rem;
+                            color:$colordos;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* preguntasfrecuentes.html*/
+    .preguntas{
+        margin:0;
+        width:100%;
+        .preguntasfrecuentes{
+            height: 100%;
+            background-color: $colordos;
+            display:flex;
+            width:100%;
+            .notebook{
+                display:block;
+                width:30%;
+            }
+            .signodeinterrogacion{
+                display:block;
+                width:30%;
+            }
+            .accordion{
+                background-color: $colordos;
+                width:40%;
+                height:100%;
+            }
+        }
+    }
+    /* servicios.html*/
+    .servicios__body{
+        width:100%;
+        background-color: $colordos;
+        .servicio{
+            width:100%;
+            background-color: $colordos;
+            .servicios{
+                background-color: $colordos;
+                width:100%;
+                display:grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: repeat(1,1fr);
+                .card-mantenimiento,.card-hardware,.card-celulares,.card-redes{
+                    width:80%;
+                    max-width: 360px;
+                    display:flex;
+                    flex-direction: column;
+                    @include sombras;
+                    margin:5%5%;
+                    overflow: hidden;
+                    @include sombras;
+                    height:600px;
+                    border-radius: 2%;
+                    .card__top{
+                        height:40%;
+                        .card__img{
+                            width:100%;
+                            height:240px;
+                        }
+                    }
+                    .card__contenido{
+                        background-color: $coloruno;
+                        width:100%;
+                        height:60%;
+                        color:white;
+                        text-align: center;
+                        .card__h2{
+                            color:$colordos;
+                            font-size: 2.5rem;
+                        }
+                        .card__p{
+                            color:white;
+                            font-size: 2rem;
+                        }
+                    }
+                    &:hover{
+                    box-shadow: 5px 5px 20px rgba(0,0,0,0.9);
+                    }
+                }
+            }
+            .profesionales{
+                width:100%;
+                .cards{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    width:100%;
+                }
+            }
+        }
+    }
+}

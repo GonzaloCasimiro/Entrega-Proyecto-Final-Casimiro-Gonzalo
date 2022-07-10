@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 10px;
+}
+$coloruno: #112b3c;
+$colordos: #FF7700;
+            /*mixins*/
+@mixin sombras{
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.9);
+}
+@mixin column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+@mixin card-profesionales{
+    margin:20%;
+    background-color: $coloruno;
+    border-radius: 1rem;
+    margin:1rem;
+    border:solid white;
+    width:200px;
+    height:300px;
+    @include sombras;
+    .card__img{
+        background-color: $coloruno;
+        margin:0.5rem;
+        width:180px;
+        height: 150px;
+        background-size: cover;
+        border-radius: 10%;
+    }
+    .card__bot{
+        border-bottom-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+        text-align: center;
+        height:135px;
+        border-top: solid white;
+        background-color: $coloruno;
+        color:$colordos;
+        h2{
+            font-size: 2rem;
+            height:20%;
+        }
+        ul{
+            line-height: 2.2rem;
+            list-style: none;
+            li{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+/* import's*/
+@import 'contactos';
+@import 'preguntasfrecuentes';
+@import 'nosotros';
+@import 'servicios';
+@import 'media';
+/* foooter+header*/
+body{
+    header{
+        background-color: $coloruno;
+        .navbar{
+            text-align: center;
+            .container-fluid{
+                a{
+                    font-size: 2rem;
+                }
+                button{
+                    font-size: 3rem;
+                }
+                .navbar-collapse{
+                    font-size: 3rem;
+                    ul{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        width:100%;
+        height:auto;
+        padding:0;
+        margin:0;
+        background-color: $coloruno;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        .ul-footer{
+            li{
+                color:$colordos;
+                font-size: 3rem;
+            }
+            color: white;
+            display:flex;
+            flex-direction: column;
+            background-color: none;
+            list-style: none;
+            font-size: 3rem;
+            .fa-whatsapp,.fa-instagram,.fa-facebook,.fa-envelope{
+                color: $colordos;
+                font-size: 4rem;
+            }
+        }
+    }
+}
+/*index.html*/
+.index{
+    width: 100%;
+    background-color: $colordos;
+    main{
+        width:100%;
+        .portada{
+            display:none;
+        }
+        .imagenes{
+            background-color: $colordos;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+            width:100%;
+            .imagenes__lista{
+                display: none;
+            }
+            .card{
+                width:90%;
+                display: flex;
+                flex-direction: column;
+                max-height: 800px;
+                @include sombras;
+                margin: 10%;
+                .card-body{
+                    background-color: $coloruno;
+                    color:$colordos;
+                    border:solid $coloruno;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                    text-align: center;
+                    h5{
+                        color:white;
+                        font-size: 3rem;
+                    }
+                    p{
+                        font-size: 1.5rem;
+                    }
+                    .btn-primary{
+                        font-size: 2rem;
+                        color:white;
+                        background-color: $colordos;
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes li{
+    0%{background-color: $coloruno;}
+    25%{background-color: $colordos;}
+    50%{background-color:$coloruno;}
+    100%{background-color:$colordos;}
+    from{background-color: 0%;} to{background-color: 100%;}
+}
+@keyframes li-dos{
+    0%{background-color: $colordos;}
+    25%{background-color: $coloruno;}
+    50%{background-color:$colordos;}
+    100%{background-color:$coloruno;}
+    from{background-color: 0%;} to{background-color: 100%;}
+}
+h1{
+    text-align: center;
+    background-color: $coloruno;
+    color:$colordos;
+    font-size: 3rem;
+}
+

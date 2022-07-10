@@ -1,0 +1,35 @@
+/*preguntasfrecuentes.html*/
+.preguntasfrecuentes{
+    .notebook {
+        display:none;
+    }
+    .signodeinterrogacion{
+        display:none;
+    }
+    .accordion{
+        background-color: $colordos;
+        h1{
+            text-align: center;
+            background-color: $colordos;
+            color:black;
+            font-size: 2rem;
+        }
+        &-item{
+            .accordion-header{
+                background-color: $colordos;
+                .accordion-button{
+                    background-color: $colordos;
+                    font-size: 20px;
+                }
+            }
+        .accordion-collapse{
+            .accordion-body{
+                background-color: $colordos;
+                color:$coloruno;
+                font-size: 15px;
+            }
+        }
+        }
+    }
+}
+
